@@ -73,5 +73,5 @@ function game() { // Loops "playRound()" until the player or the computer scores
         }
     }
   }
-
+  
 game(); //  Final function. Uses all the other elements until it reaches a result//
