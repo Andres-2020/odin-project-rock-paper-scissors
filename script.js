@@ -1,10 +1,4 @@
-// Pseudo-code: Game: "Rock, Paper or Scissors"
-// a. Create a function that gets a random choice from the computer and returns "Rock, Paper or Scissors" //
-// b. Create a function that gets a random choice from the player, returnes "Rock, Paper or Scissors" and is case-insensitive//
-// c. Create a function that uses both values and sets the parameters of the game for a single round//
-// d. Create a function that loops the game until the player or the computer gets 5 points//
-
-function getComputerChoice() {  // Gets a random integer from 0 to 2 and then returns them in the form of a string with the value "Rock", "Paper" or "Scissors"//
+function getComputerChoice() {
     const random = Math.floor(Math.random()*3);
     if (random === 0) {
       return "Paper";
@@ -15,7 +9,7 @@ function getComputerChoice() {  // Gets a random integer from 0 to 2 and then re
     }
   }
 
-function getPlayerChoice() {  // Gets the player's input and returns and edited string//
+function getPlayerChoice() {
     let choice = prompt("Pick One: Rock, Paper Or Scissors. First To Get 5 Points Wins!");
     let trim = choice.trim();
     let lower = trim.toLowerCase();
@@ -29,15 +23,15 @@ function getPlayerChoice() {  // Gets the player's input and returns and edited 
     return result;
   }
 
-let playerScore = 0;  // Declared the player score variable//
-let computerScore = 0;  // Declared the computer score variable//
+let playerScore = 0;
+let computerScore = 0;
 
-function playRound() {  // Establishes the games parameters for the game using the previous functions values//
-    let computerSelection = getComputerChoice();  // "getComputerChoice()" is now "computerSelection"//
-    let playerSelection = getPlayerChoice();  // "getPlayerChoice()" is now "playerSelection"//
+function playRound() {
+    let computerSelection = getComputerChoice();
+    let playerSelection = getPlayerChoice();
     console.log(playerSelection);
     console.log(computerSelection);
-    if (playerSelection == computerSelection) { // Establishes all posible results from here//
+    if (playerSelection == computerSelection) {
       console.log("It's a Tie");
     } else if (playerSelection == "Rock" && computerSelection == "Scissors") {
       console.log("You Won! Rock Beats Scissors!");
@@ -57,11 +51,11 @@ function playRound() {  // Establishes the games parameters for the game using t
     } else if (computerSelection == "Paper" && playerSelection == "Rock") {
       console.log("Oops, You Lost, Paper Beats Rock!");
       computerScore++;
-    } // To here//
-    console.log(`Score: -You: ${playerScore}. -Computer: ${computerScore}.`); // Shows the current score each round//
+    }
+    console.log(`Score: -You: ${playerScore}. -Computer: ${computerScore}.`);
   }
 
-function game() { // Loops "playRound()" until the player or the computer scores 5 points//
+function game() {
     for (let endScore = false; endScore == false;) {
         playRound();
         if (playerScore == 5) {
@@ -74,4 +68,4 @@ function game() { // Loops "playRound()" until the player or the computer scores
     }
   }
   
-game(); //  Final function. Uses all the other elements until it reaches a result//
+game();
