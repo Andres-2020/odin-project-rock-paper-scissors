@@ -1,4 +1,4 @@
-# Calculator For The Odin Project
+# "Rock, Paper Or Scissors" Game
 
 ## Step by step
 
