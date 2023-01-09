@@ -1,15 +1,13 @@
 # Calculator For The Odin Project
 
-## Changes
+## Step by step
 
-###### Pseudo-code: Game: "Rock, Paper or Scissors"
+1. Created the **"_getComputerChoice_"** function which gets a random choice from the computer and returns "Rock", "Paper" or "Scissors".
+2. Created the **"_getPlayerChoice_"** function which gets a random choice from the player and returns "Rock", "Paper" or "Scissors" **and** is case-insensitive.
+3. Created the **"_playerScore_"** and **"_computerScore_"** variables.
+4. Created the **"_playRound_"** function which relies on the "_playerScore_" and "_computerScore_" values to play a single round of "Rock, Paper or Scissors" to declare a winner.
+5. Created the **"_game_"** function which loops the "_playRound_" function until someone scores 5 points.
 
-- a. Create a function that gets a random choice from the computer and returns "Rock, Paper or Scissors"
-- b. Create a function that gets a random choice from the player, returnes "Rock, Paper or Scissors" and is case-insensitive
-- c. Create a function that uses both values and sets the parameters of the game for a single round
-- d. Create a function that loops the game until the player or the computer gets 5 points
+###### Revisited
 
-###### Added
-
-- Game function
-- UI
+- Added an UI.
