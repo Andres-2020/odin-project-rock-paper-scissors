@@ -8,7 +8,7 @@
 4. Created the **"_playRound_"** function which relies on the "_playerScore_" and "_computerScore_" values to play a single round of "Rock, Paper or Scissors" to declare a winner.
 5. Created the **"_game_"** function which loops the "_playRound_" function until someone scores 5 points.
 
-###### How do these functions work?
+###### What do these functions do?
 
 - **"getComputerChoice"** Gets a random integer from 0 to 2 and then returns them in the form of a string with the value "Rock", "Paper" or "Scissors".
 - **"getPlayerChoice"** Gets the player's input and returns it in an edited string (also "Rock", "Paper" or "Scissors").
